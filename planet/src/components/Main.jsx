@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { OrbitControls, useTexture} from '@react-three/drei'
+import { OrbitControls, Stars, useTexture} from '@react-three/drei'
 import vertex from '../shaders/vertex.glsl';
 import fragment from '../shaders/fragment.glsl';
 import * as THREE from 'three'
@@ -56,6 +56,7 @@ useFrame(() => {
 
   return (
      <>
+     
        <OrbitControls makeDefault />
         <mesh ref={earth}>
            <sphereGeometry args={[ 2, 64, 64]} />
