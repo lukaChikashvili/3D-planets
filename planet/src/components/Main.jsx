@@ -14,21 +14,37 @@ const Main = () => {
 // load textures
 const dayTexture = useTexture('./day.jpg');
 dayTexture.colorSpace = THREE.SRGBColorSpace;
+dayTexture.anisotropy = 8;
 const nightTexture = useTexture('./night.jpg');
 nightTexture.colorSpace = THREE.SRGBColorSpace;
+nightTexture.anisotropy = 8;
+const cloudsTexture = useTexture('./clouds.jpg');
+nightTexture.colorSpace = THREE.SRGBColorSpace;
+nightTexture.anisotropy = 8;
+
+// earth parameters
+let atmosphereDayColor = '#00aaff';
+let atmosphereTwilight = '#ff6600';
+
 
 
 // uniforms
 const uniforms = useRef({
     day: new THREE.Uniform(dayTexture),
-    night: new THREE.Uniform(nightTexture)
+    night: new THREE.Uniform(nightTexture),
+    clouds: new THREE.Uniform(cloudsTexture),
+    uAtmosphereDayColor: new THREE.Uniform(new THREE.Color(atmosphereDayColor)),
+    uAtmosphereTwilight: new THREE.Uniform(new THREE.Color(atmosphereTwilight))
 });
+
+
+
 
 // rotate earth
 let earth = useRef();
 
 useFrame(() => {
-    earth.current.rotation.y += 0.0005;
+    earth.current.rotation.y += 0.0004;
 })
 
 
