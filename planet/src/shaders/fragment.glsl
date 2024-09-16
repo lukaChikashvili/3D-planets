@@ -4,6 +4,7 @@ varying vec3 vPosition;
 uniform sampler2D day;
 uniform sampler2D night;
 uniform sampler2D clouds;
+uniform vec3 uSunDirection;
 uniform vec3 uAtmosphereDayColor;
 uniform vec3 uAtmosphereTwilight;
 

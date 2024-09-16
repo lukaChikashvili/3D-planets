@@ -2,10 +2,10 @@ import React, { useRef } from 'react'
 import { OrbitControls, useTexture} from '@react-three/drei'
 import vertex from '../shaders/vertex.glsl';
 import fragment from '../shaders/fragment.glsl';
-import { SRGBColorSpace } from 'three';
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber';
-
+import atmosphereVertex from '../shaders/atmosphere/vertex.glsl';
+import atmosphereFramgent from '../shaders/atmosphere/fragment.glsl';
 
 
 
@@ -33,10 +33,16 @@ const uniforms = useRef({
     day: new THREE.Uniform(dayTexture),
     night: new THREE.Uniform(nightTexture),
     clouds: new THREE.Uniform(cloudsTexture),
+    uSunDirection: new THREE.Uniform(new THREE.Vector3(0, 0, 1)),
     uAtmosphereDayColor: new THREE.Uniform(new THREE.Color(atmosphereDayColor)),
     uAtmosphereTwilight: new THREE.Uniform(new THREE.Color(atmosphereTwilight))
 });
 
+const AtmosphereUniforms = useRef({
+    uSunDirection: new THREE.Uniform(new THREE.Vector3(0, 0, 1)),
+    uAtmosphereDayColor: new THREE.Uniform(new THREE.Color(atmosphereDayColor)),
+    uAtmosphereTwilight: new THREE.Uniform(new THREE.Color(atmosphereTwilight))
+});
 
 
 
@@ -58,6 +64,17 @@ useFrame(() => {
             fragmentShader={fragment}
             uniforms={uniforms.current} 
             />
+        </mesh>
+
+        <mesh scale={[1.04, 1.04, 1.04]}>
+         <sphereGeometry args={[ 2, 64, 64]}  />
+         <shaderMaterial 
+         side={THREE.BackSide}
+         transparent = {true}
+         vertexShader={atmosphereVertex}
+         fragmentShader={atmosphereFramgent}
+         uniforms={AtmosphereUniforms.current}
+         />
         </mesh>
      </>
   )
