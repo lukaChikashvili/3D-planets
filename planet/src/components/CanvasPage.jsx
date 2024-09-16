@@ -8,7 +8,7 @@ const CanvasPage = () => {
   <>
    <Canvas>
         <Main />
-        <Lights />
+      
    </Canvas>
   </>
   )

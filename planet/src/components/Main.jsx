@@ -4,6 +4,7 @@ import vertex from '../shaders/vertex.glsl';
 import fragment from '../shaders/fragment.glsl';
 import { SRGBColorSpace } from 'three';
 import * as THREE from 'three'
+import { useFrame } from '@react-three/fiber';
 
 
 
@@ -23,11 +24,18 @@ const uniforms = useRef({
     night: new THREE.Uniform(nightTexture)
 });
 
+// rotate earth
+let earth = useRef();
+
+useFrame(() => {
+    earth.current.rotation.y += 0.0005;
+})
+
 
   return (
      <>
        <OrbitControls makeDefault />
-        <mesh>
+        <mesh ref={earth}>
            <sphereGeometry args={[ 2, 64, 64]} />
            <shaderMaterial 
             vertexShader={vertex}
