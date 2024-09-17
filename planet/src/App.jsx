@@ -1,12 +1,18 @@
+import { Route, Routes } from "react-router-dom"
 import CanvasPage from "./components/CanvasPage"
 
 
 function App() {
 
+   
 
   return (
     <>
-      <CanvasPage />
+     
+
+      <Routes>
+         <Route path="/" element = { <CanvasPage />} />
+      </Routes>
     </>
   )
 }
