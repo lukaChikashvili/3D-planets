@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/futuristic');
+
 #root {
     position: fixed;
     top: 0;
@@ -6,6 +8,7 @@
     height: 100vh;
     overflow: hidden;
     background-color: black;
+    font-family: 'Futuristic', sans-serif;
 }
 
 .interface {
@@ -16,4 +19,30 @@
     left: 0;
     background-color: transparent;
     z-index: -1;
+}
+
+.interface_buttons {
+    color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    height: 100vh;
+
+
+}
+
+.title {
+    font-size: 5rem;
+    width: 500px;
+    text-align: center;
+}
+
+.interface_buttons button {
+    clip-path: polygon(
+        0% 0%, 90% 0%,
+        100% 10%, 
+        100% 100%, 
+        10% 100%, 
+        0% 90% 
+      );
 }

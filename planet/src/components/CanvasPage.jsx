@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import Main from './Main'
 import Lights from './Lights'
 import Moon from './Moon'
+import InterFace from './InterFace'
 
 const CanvasPage = () => {
   return (
@@ -13,7 +14,7 @@ const CanvasPage = () => {
    </Canvas>
 
    <div className='interface'>
-     sfsfsf
+      <InterFace />
    </div>
   </>
   )
