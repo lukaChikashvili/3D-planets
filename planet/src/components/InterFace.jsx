@@ -1,23 +1,43 @@
-import React from 'react'
+import React, { useState, useRef } from 'react';
+import sound from '../assets/effect.wav';
 
 const InterFace = () => {
-  return (
-    <div className='interface_buttons'>
-        <h2 className='title'>Discover the planets</h2>
+    const [audio] = useState(new Audio(sound));
+    const audioRef = useRef(audio);
 
-        <div className='buttons'>
-            <button>EARTH</button>
-            <button>MERCURY</button>
-            <button>VENUS</button>
-            <button>MARS</button>
-            <button>JUPITER</button>
-            <button>SATURN</button>
-            <button>URANUS</button>
-            <button>NEPTUN</button>
-            <button>PLUTO</button>
+    // Play sound
+    const playSound = () => {
+        if (audioRef.current) {
+            audioRef.current.play();
+        }
+    };
+
+    // Stop sound
+    const stopSound = () => {
+        if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0; 
+        }
+    };
+
+    return (
+        <div className='interface_buttons'>
+            <h2 className='title'>Discover the planets</h2>
+
+            <div className='buttons'>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>EARTH</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>MERCURY</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>VENUS</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>MARS</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>JUPITER</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>SATURN</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>URANUS</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>NEPTUN</button>
+                <button onMouseEnter={playSound} onMouseLeave={stopSound}>PLUTO</button>
+            </div>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default InterFace
+export default InterFace;
+

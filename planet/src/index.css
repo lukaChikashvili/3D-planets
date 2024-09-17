@@ -9,6 +9,7 @@
     overflow: hidden;
     background-color: black;
     font-family: 'Futuristic', sans-serif;
+    
 }
 
 .interface {
@@ -18,7 +19,7 @@
     top: 0;
     left: 0;
     background-color: transparent;
-    z-index: -1;
+    
 }
 
 .interface_buttons {
@@ -52,10 +53,18 @@
       width: 300px;
       background-color:transparent;
       color: #fff;
-      pointer-events: all;
       outline: none;
       padding: 10px 10px;
       border: 2px solid #fff;
+      cursor: pointer;
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+      
+}
+
+.interface_buttons button:hover {
+    background-color: #fff;
+    color: #191919;
+    font-weight: bold;
 }
 
 
