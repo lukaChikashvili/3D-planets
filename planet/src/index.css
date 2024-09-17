@@ -35,6 +35,10 @@
     font-size: 5rem;
     width: 500px;
     text-align: center;
+    letter-spacing: 8px;
+    position: absolute;
+    left: 0.5rem; 
+    bottom: 0.5rem;
 }
 
 .interface_buttons button {
@@ -45,4 +49,23 @@
         10% 100%, 
         0% 90% 
       );
+      width: 300px;
+      background-color:transparent;
+      color: #fff;
+      pointer-events: all;
+      outline: none;
+      padding: 10px 10px;
+      border: 2px solid #fff;
 }
+
+
+.buttons {
+    position: absolute;
+    top: 4rem;
+    right: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+

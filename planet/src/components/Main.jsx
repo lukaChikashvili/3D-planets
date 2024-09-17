@@ -59,7 +59,7 @@ useFrame(() => {
      
        <OrbitControls makeDefault />
 
-        <mesh ref={earth}>
+        <mesh ref={earth} scale={1.3}>
            <sphereGeometry args={[ 2, 64, 64]} />
            <shaderMaterial 
             vertexShader={vertex}
