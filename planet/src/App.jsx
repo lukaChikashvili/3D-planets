@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import CanvasPage from "./components/CanvasPage"
+import Moon from "./components/Moon"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
       <Routes>
          <Route path="/" element = { <CanvasPage />} />
+        
       </Routes>
     </>
   )
