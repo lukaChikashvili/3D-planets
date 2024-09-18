@@ -6,6 +6,9 @@ const InterFace = () => {
     const [audio] = useState(new Audio(sound));
     const audioRef = useRef(audio);
 
+    const [selectedPlanet, setSelectedPlanet] = useState('Discover the planets');
+
+
     // Play sound
     const playSound = () => {
         if (audioRef.current) {
@@ -47,23 +50,31 @@ const InterFace = () => {
     
 
 
-    }, [])
+    }, []);
+
+
+    const handleClick = (planet) => {
+       setSelectedPlanet(planet);
+
+       
+    }
   
 
     return (
         <div className='interface_buttons'>
-            <h2 className='title'>Discover the planets</h2>
+            <h2 className='title'>{selectedPlanet}</h2>
 
             <div className='buttons'>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>EARTH</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>MERCURY</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>VENUS</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>MARS</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>JUPITER</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>SATURN</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>URANUS</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>NEPTUN</button>
-                <button onMouseEnter={playSound} onMouseLeave={stopSound}>PLUTO</button>
+            {['EARTH', 'MERCURY', 'VENUS', 'MARS', 'JUPITER', 'SATURN', 'URANUS', 'NEPTUNE', 'PLUTO'].map((planet) => (
+                    <button
+                        key={planet}
+                        onClick={() => handleClick(planet)}
+                        onMouseEnter={playSound}
+                        onMouseLeave={stopSound}
+                    >
+                        {planet}
+                    </button>
+                ))}
             </div>
         </div>
     );
