@@ -9,6 +9,8 @@ const InterFace = () => {
     const [selectedPlanet, setSelectedPlanet] = useState('Discover the planets');
     const [showMenu, setShowMenu] = useState(false);
 
+    let interfaceRef = useRef();
+
 
 
     // Play sound
@@ -91,6 +93,9 @@ const InterFace = () => {
 
               setSelectedPlanet('Discover the planets');
 
+              // change z-index
+              interfaceRef.current.style.zIndex = '-10';
+
 
           // reset the title reveal effect
               gsap.set('.title', {
@@ -149,7 +154,7 @@ const InterFace = () => {
   
 
     return (
-        <div className='interface_buttons'>
+        <div className='interface_buttons' ref={interfaceRef}>
             <h2 className='title'>{selectedPlanet}</h2>
 
             <div className='buttons'>
