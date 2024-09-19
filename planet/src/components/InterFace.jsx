@@ -120,6 +120,20 @@ const InterFace = () => {
                 ease: "power2.inOut",
                 
             });
+
+            // animate title line
+            gsap.set('.line', {
+              opacity: 0,
+              width: 0,
+             });
+        
+             gsap.to('.line', {
+              opacity: 1,
+              width: "400px",
+              duration: 2,
+              ease: "power2.inOut",
+              
+          });
         
           }
       
@@ -142,6 +156,19 @@ const InterFace = () => {
         ease: "power2.inOut",
         
     });
+
+    gsap.set('.line', {
+      opacity: 0,
+      width: 0,
+     });
+
+     gsap.to('.line', {
+      opacity: 1,
+      width: "400px",
+      duration: 2,
+      ease: "power2.inOut",
+      
+  });
 
 
     gsap.fromTo('.buttons button', {
@@ -238,6 +265,8 @@ const InterFace = () => {
     return (
         <div className='interface_buttons' ref={interfaceRef}>
             <h2 className='title'>{selectedPlanet}</h2>
+            <span className='line'></span>
+        
 
             <div className='buttons'>
             {['EARTH', 'MERCURY', 'VENUS', 'MARS', 'JUPITER', 'SATURN', 'URANUS', 'NEPTUNE', 'PLUTO'].map((planet) => (

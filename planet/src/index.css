@@ -51,7 +51,20 @@
     bottom: 0.5rem;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     opacity: 0;
+   
 }
+
+.line {
+    width: 400px;
+    background-color: #FFBF00;
+    height: 2px;
+    position: absolute;
+    left: 5rem;
+    bottom: 3.5rem;
+
+}
+
+
 
 .interface_buttons button {
     clip-path: polygon(

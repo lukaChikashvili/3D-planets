@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from 'react'
-import { OrbitControls, Stars, useTexture} from '@react-three/drei'
+import { Html, OrbitControls, Stars, useTexture} from '@react-three/drei'
 import vertex from '../shaders/vertex.glsl';
 import fragment from '../shaders/fragment.glsl';
 import * as THREE from 'three'
@@ -119,6 +119,7 @@ useEffect(() => {
     <mesh ref={earth} scale={1.3}>
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={mercuryTexture} />
+       
     </mesh>
   ) : venus ? (
     <mesh ref={earth} scale={1.3}>
