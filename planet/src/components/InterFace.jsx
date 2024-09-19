@@ -259,21 +259,69 @@ const InterFace = () => {
   };
   
 
+
+
+
     
   
+    
+  
+const [first, setFirst] = useState(false);
+const [second, setSecond] = useState(false);
+const [third, setThird] = useState(false);
+const [fourth, setFourth] = useState(false);
 
     return (
         <div className='interface_buttons' ref={interfaceRef}>
             <h2 className='title'>{selectedPlanet}</h2>
             <span className='line'></span>
+
+          
+        
+      <div
+        className='sections'
+        
+      >
+        
+        <div
+          onMouseEnter={() => setFirst(true)}
+          onMouseLeave={() => setFirst(false)}
+         
+        ></div>
+         
+         
+
+        <div
+          onMouseEnter={() => setSecond(true)}
+          onMouseLeave={() => setSecond(false)}
+         
+        ></div>
         
 
-           <div className='sections'>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+        <div
+          onMouseEnter={() => setThird(true)}
+          onMouseLeave={() => setThird(false)}
+         
+        ></div>
+    
+
+        <div
+          onMouseEnter={() => setFourth(true)}
+          onMouseLeave={() => setFourth(false)}
+         
+        ></div>
+        
+       
+
+        
+      </div>
+
+      <div className='hovered'>
+          <p style={{ opacity: first ? 1 : 0}}>Introduction</p>
+          <p style={{ opacity: second ? 1 : 0}}>Size and distance</p>
+          <p style={{ opacity: third ? 1 : 0}}>Orbit and rotations</p>
+          <p style={{ opacity: fourth ? 1 : 0}}>Surface</p>
+        </div>
 
             <div className='buttons'>
             {['EARTH', 'MERCURY', 'VENUS', 'MARS', 'JUPITER', 'SATURN', 'URANUS', 'NEPTUNE', 'PLUTO'].map((planet) => (
@@ -288,11 +336,11 @@ const InterFace = () => {
                 ))}
             </div>
 
-            {showMenu && <p className='menu' onClick={() => setShowMenu(false)}>
+            {showMenu && <span className='menu' onClick={() => setShowMenu(false)}>
                 <div></div>
                 <div></div>
                  
-              </p>}
+              </span>}
         </div>
     );
 };
