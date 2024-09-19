@@ -101,6 +101,20 @@ const InterFace = () => {
                 pointerEvents: "all"
               });
 
+              gsap.fromTo('.sections', {
+                opacity:1,
+                y: 20
+              }, {
+                opacity: 0,
+                y: 0,
+                duration: 1,
+                ease: "power2.out",
+                stagger: 0.1,
+                delay: 0.5
+              });
+            
+             
+
               setSelectedPlanet('Discover the planets');
 
               // change z-index
@@ -136,6 +150,10 @@ const InterFace = () => {
           });
         
           }
+
+       
+        
+          
       
     }, [showMenu])
 
@@ -143,6 +161,29 @@ const InterFace = () => {
 
     const handleClick = (planet) => {
        setSelectedPlanet(planet);
+
+
+      // animate sections
+     
+        
+        gsap.fromTo('.sections', {
+          opacity:0,
+          y: 5
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.1,
+          delay: 1.5
+        });
+      
+       
+    
+
+
+
+
 
        gsap.set('.title', {
         opacity: 0,
@@ -259,17 +300,15 @@ const InterFace = () => {
   };
   
 
-
-
-
-    
-  
-    
   
 const [first, setFirst] = useState(false);
 const [second, setSecond] = useState(false);
 const [third, setThird] = useState(false);
 const [fourth, setFourth] = useState(false);
+
+
+
+
 
     return (
         <div className='interface_buttons' ref={interfaceRef}>
@@ -316,7 +355,7 @@ const [fourth, setFourth] = useState(false);
         
       </div>
 
-      <div className='hovered'>
+      <div className='hovered' >
           <p style={{ opacity: first ? 1 : 0}}>Introduction</p>
           <p style={{ opacity: second ? 1 : 0}}>Size and distance</p>
           <p style={{ opacity: third ? 1 : 0}}>Orbit and rotations</p>
