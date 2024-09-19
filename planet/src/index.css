@@ -97,29 +97,29 @@
 
 }
 
-
 .menu {
-    clip-path: polygon(
-        0% 0%, 90% 0%,
-        100% 10%, 
-        100% 100%, 
-        10% 100%, 
-        0% 90% 
-      );
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    pointer-events: auto;
+    cursor: pointer;
+}
 
-      border: 1px solid #fff;
-      width: 150px;
-      text-align: center;
-      font-size: 30px;
-      position: absolute;
-      right: 40px;
-      cursor: pointer;
-      transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
-      pointer-events: auto;
-      
+.menu div {
+    width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+
+
+  
 } 
 
-.menu:hover {
-    border: 1px solid #229799;
-  
+.menu div:nth-of-type(2) {
+    background-color: #FFBF00;
+    margin-left: -10px;
+    font-weight: bold;
+    width: 30px;
 }
+
+

@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import { OrbitControls, Stars, useTexture} from '@react-three/drei'
 import vertex from '../shaders/vertex.glsl';
 import fragment from '../shaders/fragment.glsl';
@@ -7,14 +7,14 @@ import { useFrame } from '@react-three/fiber';
 import atmosphereVertex from '../shaders/atmosphere/vertex.glsl';
 import atmosphereFramgent from '../shaders/atmosphere/fragment.glsl';
 import { PlanetContext } from '../context/PlanetContext';
-
+import gsap from 'gsap'
 
 
 
 const Main = () => {
 
     // use context
-    const { mercury, venus, mars, jupiter, saturn, uranus } = useContext(PlanetContext);
+    const { mercury, venus, mars, jupiter, saturn, uranus, neptune } = useContext(PlanetContext);
 
 
 
@@ -52,6 +52,11 @@ saturnTexture.anisotropy = 8;
 const uranTexture = useTexture('./uranus.jpg');
 uranTexture.colorSpace = THREE.SRGBColorSpace;
 uranTexture.anisotropy = 8;
+
+// neptune
+const neptuneTexture = useTexture('./neptune.jpg');
+neptuneTexture.colorSpace = THREE.SRGBColorSpace;
+neptuneTexture.anisotropy = 8;
 
 
 const nightTexture = useTexture('./night.jpg');
@@ -92,6 +97,15 @@ useFrame(() => {
     earth.current.rotation.y += 0.0004;
 })
 
+// change planet smoothly
+
+useEffect(() => {
+    if (earth.current) {
+        gsap.set(earth.current.material, { opacity: 0 });
+        gsap.to(earth.current.material, { opacity: 1, duration: 2, delay: 2 }); 
+    }
+}, [mercury, venus, mars, jupiter, saturn, uranus, neptune]);
+
 
   return (
      <>
@@ -130,6 +144,11 @@ useFrame(() => {
     <mesh ref={earth} scale={1.3}>
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={uranTexture} />
+    </mesh>
+  ) : neptune ? (
+    <mesh ref={earth} scale={1.3}>
+      <sphereGeometry args={[2, 64, 64]} />
+      <meshBasicMaterial map={neptuneTexture} />
     </mesh>
   )  : (
     <>

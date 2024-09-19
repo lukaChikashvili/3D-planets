@@ -252,7 +252,11 @@ const InterFace = () => {
                 ))}
             </div>
 
-            {showMenu && <p className='menu' onClick={() => setShowMenu(false)}>Planets</p>}
+            {showMenu && <p className='menu' onClick={() => setShowMenu(false)}>
+                <div></div>
+                <div></div>
+                 
+              </p>}
         </div>
     );
 };
