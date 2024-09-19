@@ -16,13 +16,19 @@ const PlanetProvider = ({ children }) => {
 
    // saturn 
    const [saturn, setSaturn] = useState(false);
+   // uranus 
+const [uranus, setUranus] = useState(false);
+ // neptune 
+ const [neptune, setNeptune] = useState(false);
+
 
 
 
     return (
      <PlanetContext.Provider value={{ mercury,
       setMercury, venus, setVenus , mars, 
-      setMars, jupiter, setJupiter, saturn, setSaturn}} >
+      setMars, jupiter, setJupiter, saturn, setSaturn, uranus, setUranus, 
+      neptune, setNeptune}} >
          { children }
      </PlanetContext.Provider>
     )

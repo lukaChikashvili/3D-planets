@@ -18,7 +18,9 @@ const InterFace = () => {
              setVenus, 
              setMars , 
             setJupiter, 
-             setSaturn} = useContext(PlanetContext);
+             setSaturn, 
+             setUranus, 
+            setNeptune} = useContext(PlanetContext);
 
 
     // Play sound
@@ -163,6 +165,8 @@ const InterFace = () => {
         setSaturn(false);
         setJupiter(false);
         setMars(false);
+        setUranus(false);
+        setNeptune(false);
 
       }else if(planet === "VENUS") {
           setVenus(true);
@@ -170,30 +174,55 @@ const InterFace = () => {
           setJupiter(false);
           setMars(false);
           setSaturn(false);
+          setNeptune(false);
       }else if(planet === "MARS") {
         setVenus(false);
         setMercury(false);
         setMars(true);
         setJupiter(false);
         setSaturn(false);
+        setNeptune(false);
+        setUranus(false);
     }else if(planet === "JUPITER") {
       setVenus(false);
       setMercury(false);
       setMars(false);
+      setNeptune(false);
       setJupiter(true);
       setSaturn(false);
+      setUranus(false);
   }else if(planet === "SATURN") {
     setVenus(false);
     setMercury(false);
     setMars(false);
-    setJupiter(true);
+    setJupiter(false);
+    setNeptune(false);
     setSaturn(true);
+    setUranus(false);
+}else if(planet === "URANUS") {
+  setVenus(false);
+  setMercury(false);
+  setMars(false);
+  setJupiter(false);
+  setSaturn(false);
+  setUranus(true);
+  setNeptune(false);
+}else if(planet === "NEPTUNE") {
+  setVenus(false);
+  setMercury(false);
+  setMars(false);
+  setJupiter(false);
+  setSaturn(false);
+  setUranus(false);
+  setNeptune(true);
 }else {
         setMercury(false);
         setVenus(false);
         setMars(false);
         setJupiter(false);
         setSaturn(false);
+        setUranus(false);
+        setNeptune(false);
 
       }
 

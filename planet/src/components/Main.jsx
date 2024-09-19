@@ -14,7 +14,7 @@ import { PlanetContext } from '../context/PlanetContext';
 const Main = () => {
 
     // use context
-    const { mercury, venus, mars, jupiter, saturn } = useContext(PlanetContext);
+    const { mercury, venus, mars, jupiter, saturn, uranus } = useContext(PlanetContext);
 
 
 
@@ -47,6 +47,12 @@ jupiterTexture.anisotropy = 8;
 const saturnTexture = useTexture('./saturn.jpg');
 saturnTexture.colorSpace = THREE.SRGBColorSpace;
 saturnTexture.anisotropy = 8;
+
+// uranus
+const uranTexture = useTexture('./uranus.jpg');
+uranTexture.colorSpace = THREE.SRGBColorSpace;
+uranTexture.anisotropy = 8;
+
 
 const nightTexture = useTexture('./night.jpg');
 nightTexture.colorSpace = THREE.SRGBColorSpace;
@@ -119,6 +125,11 @@ useFrame(() => {
     <mesh ref={earth} scale={1.3}>
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={saturnTexture} />
+    </mesh>
+  )  : uranus ? (
+    <mesh ref={earth} scale={1.3}>
+      <sphereGeometry args={[2, 64, 64]} />
+      <meshBasicMaterial map={uranTexture} />
     </mesh>
   )  : (
     <>
