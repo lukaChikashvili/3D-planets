@@ -14,7 +14,9 @@ const InterFace = () => {
 
     
     // using context api
-    const { mercury, setMercury } = useContext(PlanetContext);
+    const {  setMercury,
+             setVenus, 
+             setMars } = useContext(PlanetContext);
 
 
     // Play sound
@@ -155,9 +157,26 @@ const InterFace = () => {
 
       if(planet === "MERCURY") {
         setMercury(true);
-      }else {
+        setVenus(false);
+        setMars(false);
+
+      }else if(planet === "VENUS") {
+          setVenus(true);
+          setMercury(false);
+          setMars(false);
+      }else if(planet === "MARS") {
+        setVenus(false);
         setMercury(false);
+        setMars(true);
+    }else {
+        setMercury(false);
+        setVenus(false);
+        setMars(false);
+
       }
+
+
+      
      
   };
   

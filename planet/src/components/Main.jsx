@@ -14,7 +14,7 @@ import { PlanetContext } from '../context/PlanetContext';
 const Main = () => {
 
     // use context
-    const { mercury } = useContext(PlanetContext);
+    const { mercury, venus, mars } = useContext(PlanetContext);
 
 
 
@@ -27,6 +27,16 @@ dayTexture.anisotropy = 8;
 const mercuryTexture = useTexture('./mercury.jpg');
 mercuryTexture.colorSpace = THREE.SRGBColorSpace;
 mercuryTexture.anisotropy = 8;
+
+// venus
+const venusTexture = useTexture('./venus.jpg');
+venusTexture.colorSpace = THREE.SRGBColorSpace;
+venusTexture.anisotropy = 8;
+
+// mars
+const marsTexture = useTexture('./mars.jpg');
+marsTexture.colorSpace = THREE.SRGBColorSpace;
+marsTexture.anisotropy = 8;
 
 
 const nightTexture = useTexture('./night.jpg');
@@ -73,37 +83,47 @@ useFrame(() => {
      
        <OrbitControls makeDefault />
 
-       { mercury ? (
- <mesh ref={earth} scale={1.3}>
- <sphereGeometry  args={[ 2, 64, 64]} />
-  <meshBasicMaterial map={mercuryTexture} />
-</mesh>
-       ) : (
-        <>
-        <mesh ref={earth} scale={1.3}>
-        <sphereGeometry args={[ 2, 64, 64]} />
-        <shaderMaterial 
-         vertexShader={vertex}
-         fragmentShader={fragment}
-         uniforms={uniforms.current} 
-         />
-     </mesh>
-
-<mesh scale={[1.04, 1.04, 1.04]}>
-<sphereGeometry args={[ 2, 64, 64]}  />
-<shaderMaterial 
-side={THREE.BackSide}
-transparent = {true}
-vertexShader={atmosphereVertex}
-fragmentShader={atmosphereFramgent}
-uniforms={AtmosphereUniforms.current}
-/>
-</mesh>
-</>
-       )
       
 
-       }
+       {
+  mercury ? (
+    <mesh ref={earth} scale={1.3}>
+      <sphereGeometry args={[2, 64, 64]} />
+      <meshBasicMaterial map={mercuryTexture} />
+    </mesh>
+  ) : venus ? (
+    <mesh ref={earth} scale={1.3}>
+      <sphereGeometry args={[2, 64, 64]} />
+      <meshBasicMaterial map={venusTexture} />
+    </mesh>
+  ) : mars ? (
+    <mesh ref={earth} scale={1.3}>
+      <sphereGeometry args={[2, 64, 64]} />
+      <meshBasicMaterial map={marsTexture} />
+    </mesh>
+  )  : (
+    <>
+      <mesh ref={earth} scale={1.3}>
+        <sphereGeometry args={[2, 64, 64]} />
+        <shaderMaterial
+          vertexShader={vertex}
+          fragmentShader={fragment}
+          uniforms={uniforms.current}
+        />
+      </mesh>
+      <mesh scale={[1.04, 1.04, 1.04]}>
+        <sphereGeometry args={[2, 64, 64]} />
+        <shaderMaterial
+          side={THREE.BackSide}
+          transparent={true}
+          vertexShader={atmosphereVertex}
+          fragmentShader={atmosphereFramgent}
+          uniforms={AtmosphereUniforms.current}
+        />
+      </mesh>
+    </>
+  )
+}
 
        
 
