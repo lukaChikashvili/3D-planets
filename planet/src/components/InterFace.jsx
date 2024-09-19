@@ -1,6 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 import sound from '../assets/effect.wav';
 import gsap from 'gsap'
+import { PlanetContext } from '../context/PlanetContext';
 
 const InterFace = () => {
     const [audio] = useState(new Audio(sound));
@@ -11,6 +12,9 @@ const InterFace = () => {
 
     let interfaceRef = useRef();
 
+    
+    // using context api
+    const { mercury, setMercury } = useContext(PlanetContext);
 
 
     // Play sound
@@ -115,6 +119,8 @@ const InterFace = () => {
       
     }, [showMenu])
 
+    // choose planet
+
     const handleClick = (planet) => {
        setSelectedPlanet(planet);
 
@@ -146,6 +152,12 @@ const InterFace = () => {
       });
 
       setShowMenu(true);
+
+      if(planet === "MERCURY") {
+        setMercury(true);
+      }else {
+        setMercury(false);
+      }
      
   };
   
