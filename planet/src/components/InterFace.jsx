@@ -268,6 +268,13 @@ const InterFace = () => {
             <span className='line'></span>
         
 
+           <div className='sections'>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+
             <div className='buttons'>
             {['EARTH', 'MERCURY', 'VENUS', 'MARS', 'JUPITER', 'SATURN', 'URANUS', 'NEPTUNE', 'PLUTO'].map((planet) => (
                     <button

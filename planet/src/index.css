@@ -135,4 +135,35 @@
     width: 30px;
 }
 
+.sections {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    right: 30px;
+    top: 16rem;
+}
 
+.sections div {
+
+    background-color: #FFBF00;
+    width: 25px;
+    height: 25px;
+    clip-path: polygon(
+        0% 0%, 90% 0%,
+        100% 10%, 
+        100% 100%, 
+        10% 100%, 
+        0% 90% 
+      );
+      border: 2px solid transparent;
+      transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      pointer-events: auto;
+      cursor: pointer;
+   
+}
+
+.sections div:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
