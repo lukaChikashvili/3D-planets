@@ -306,6 +306,35 @@ const [second, setSecond] = useState(false);
 const [third, setThird] = useState(false);
 const [fourth, setFourth] = useState(false);
 
+// introduction
+const handleIntro = () => {
+   // hide title
+
+   gsap.to('.title', {
+    opacity: 0,
+    clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0 100%)",
+    duration: 0.5,
+    ease: "power2.inOut",
+    
+});
+
+// hide line
+gsap.to('.line', {
+  opacity: 0,
+  width: "0px",
+  duration: 2,
+  ease: "power2.inOut",
+  
+});
+
+// hide sections
+gsap.to('.sections', {
+  opacity: 0,
+  duration: 2,
+  ease: "power2.inOut",
+  
+});
+}
 
 
 
@@ -325,7 +354,7 @@ const [fourth, setFourth] = useState(false);
         <div
           onMouseEnter={() => setFirst(true)}
           onMouseLeave={() => setFirst(false)}
-         
+          onClick={handleIntro}
         ></div>
          
          
@@ -356,7 +385,7 @@ const [fourth, setFourth] = useState(false);
       </div>
 
       <div className='hovered' >
-          <p style={{ opacity: first ? 1 : 0}}>Introduction</p>
+          <p style={{ opacity: first ? 1 : 0}} >Introduction</p>
           <p style={{ opacity: second ? 1 : 0}}>Size and distance</p>
           <p style={{ opacity: third ? 1 : 0}}>Orbit and rotations</p>
           <p style={{ opacity: fourth ? 1 : 0}}>Surface</p>
