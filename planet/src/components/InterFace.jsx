@@ -20,7 +20,9 @@ const InterFace = () => {
             setJupiter, 
              setSaturn, 
              setUranus, 
-            setNeptune} = useContext(PlanetContext);
+            setNeptune, 
+             introText, 
+            setIntroText} = useContext(PlanetContext);
 
 
     // Play sound
@@ -306,6 +308,7 @@ const [second, setSecond] = useState(false);
 const [third, setThird] = useState(false);
 const [fourth, setFourth] = useState(false);
 
+
 // introduction
 const handleIntro = () => {
    // hide title
@@ -334,6 +337,10 @@ gsap.to('.sections', {
   ease: "power2.inOut",
   
 });
+
+setIntroText(true);
+
+
 }
 
 
@@ -343,6 +350,11 @@ gsap.to('.sections', {
         <div className='interface_buttons' ref={interfaceRef}>
             <h2 className='title'>{selectedPlanet}</h2>
             <span className='line'></span>
+
+            {introText && <div>
+                 
+                  <h1></h1>
+              </div>}
 
           
         

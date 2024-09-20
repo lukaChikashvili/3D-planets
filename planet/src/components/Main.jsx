@@ -14,7 +14,7 @@ import gsap from 'gsap'
 const Main = () => {
 
     // use context
-    const { mercury, venus, mars, jupiter, saturn, uranus, neptune } = useContext(PlanetContext);
+    const { mercury, venus, mars, jupiter, saturn, uranus, neptune, introText } = useContext(PlanetContext);
 
 
 
@@ -107,6 +107,15 @@ useEffect(() => {
 }, [mercury, venus, mars, jupiter, saturn, uranus, neptune]);
 
 
+// animate earth position
+useEffect(() => {
+  if(introText) {
+   
+  }
+   
+}, [introText]);
+
+
   return (
      <>
      
@@ -161,7 +170,7 @@ useEffect(() => {
           uniforms={uniforms.current}
         />
       </mesh>
-      <mesh scale={[1.04, 1.04, 1.04]}>
+      <mesh scale={[1.35, 1.35, 1.35]}>
         <sphereGeometry args={[2, 64, 64]} />
         <shaderMaterial
           side={THREE.BackSide}
