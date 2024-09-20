@@ -5,6 +5,7 @@ import { PlanetContext } from '../context/PlanetContext';
 import IntroPage from './IntroPage';
 import SizePage from './SizePage';
 import OrbitPage from './OrbitPage';
+import SurfacePage from './SurfacePage';
 
 const InterFace = () => {
     const [audio] = useState(new Audio(sound));
@@ -27,7 +28,7 @@ const InterFace = () => {
              introText, 
             setIntroText, 
              setSize, size, 
-            orbit, setOrbit} = useContext(PlanetContext);
+            orbit, setOrbit, surface ,setSurface} = useContext(PlanetContext);
 
 
     // Play sound
@@ -340,7 +341,7 @@ gsap.to('.line', {
 setIntroText(true);
 setSize(false);
 setOrbit(false);
-
+setSurface(false);
 
 }
 
@@ -351,6 +352,7 @@ const handleSize = () => {
   setSize(true);
   setIntroText(false);
   setOrbit(false);
+  setSurface(false);
 }
 
 
@@ -360,6 +362,15 @@ const handleOrbit = () => {
   setSize(false);
   setIntroText(false);
   setOrbit(true);
+  setSurface(false);
+}
+
+// handle surface
+const handleSurface = () => {
+  setSize(false);
+  setIntroText(false);
+  setOrbit(false);
+  setSurface(true);
 }
 
 
@@ -385,6 +396,12 @@ const handleOrbit = () => {
                 {orbit && <div>
                    <OrbitPage />
                 </div>}
+
+                {surface && <div>
+                   <SurfacePage />
+                </div>}
+
+
 
           
         
@@ -418,6 +435,7 @@ const handleOrbit = () => {
         <div
           onMouseEnter={() => setFourth(true)}
           onMouseLeave={() => setFourth(false)}
+          onClick={handleSurface}
          
         ></div>
         
