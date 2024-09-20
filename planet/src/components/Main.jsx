@@ -106,11 +106,26 @@ useEffect(() => {
     }
 }, [mercury, venus, mars, jupiter, saturn, uranus, neptune]);
 
+// atmosphere ref
+let atmoRef = useRef();
+
 
 // animate earth position
 useEffect(() => {
   if(introText) {
-   
+   gsap.to(earth.current.position, {
+    x: 2.5,
+    y: -1,
+    z: 2,
+    duration: 2
+   });
+
+   gsap.to(atmoRef.current.position, {
+    x: 2.5,
+    y: -1,
+    z: 2,
+    duration: 2
+   })
   }
    
 }, [introText]);
@@ -170,7 +185,7 @@ useEffect(() => {
           uniforms={uniforms.current}
         />
       </mesh>
-      <mesh scale={[1.35, 1.35, 1.35]}>
+      <mesh scale={[1.35, 1.35, 1.35]} ref={atmoRef}>
         <sphereGeometry args={[2, 64, 64]} />
         <shaderMaterial
           side={THREE.BackSide}

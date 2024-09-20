@@ -10,7 +10,7 @@ const CanvasPage = () => {
   <>
    <Canvas>
         <Main />
-        <Moon />
+       
    </Canvas>
 
    <div className='interface'>

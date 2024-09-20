@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect, useContext } from 'react';
 import sound from '../assets/effect.wav';
 import gsap from 'gsap'
 import { PlanetContext } from '../context/PlanetContext';
+import IntroPage from './IntroPage';
 
 const InterFace = () => {
     const [audio] = useState(new Audio(sound));
@@ -330,13 +331,7 @@ gsap.to('.line', {
   
 });
 
-// hide sections
-gsap.to('.sections', {
-  opacity: 0,
-  duration: 2,
-  ease: "power2.inOut",
-  
-});
+
 
 setIntroText(true);
 
@@ -353,7 +348,7 @@ setIntroText(true);
 
             {introText && <div>
                  
-                  <h1></h1>
+                  <IntroPage />
               </div>}
 
           
