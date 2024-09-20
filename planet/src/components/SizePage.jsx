@@ -2,14 +2,14 @@ import React, { useContext, useEffect } from 'react'
 import gsap from 'gsap'
 import { PlanetContext } from '../context/PlanetContext';
 
-const IntroPage = () => {
+const SizePage = () => {
 
-    const { introText } = useContext(PlanetContext);
+    const { size,  } = useContext(PlanetContext);
 
    
     // animate intro page
     useEffect(() => {
-        if (introText) {
+        if (size) {
             // Animate in
             gsap.to('.intro-page h1', {
                 opacity: 1,
@@ -21,7 +21,7 @@ const IntroPage = () => {
     
             gsap.to('.intro-line', {
                 opacity: 1,
-                width: "700px",
+                width: "400px",
                 duration: 1.2,
                 delay: 0.5,
                 ease: "power2.inOut",
@@ -58,36 +58,34 @@ const IntroPage = () => {
             });
         }
     
-    }, [introText]);
+    }, [size]);
     
 
 
+
+
+
   return (
-    <div className='intro-page' >
-       <h1 style={{opacity: 0}}>Introduction</h1>
+    <div className='intro-page size-page'>
+      <h1 style={{opacity: 0}}>Size & shape</h1>
 
-       <span style={{opacity: 0}} className='line intro-line'></span>
+<span style={{opacity: 0}} className='line intro-line'></span>
 
-       <p style={{opacity: 0}}>
+<p style={{opacity: 0}}>
 
-       Earth is the third planet from the Sun and the only astronomical object known to harbor life. 
-       This is enabled by Earth being an ocean world, 
-       the only one in the Solar System sustaining liquid surface water.
-        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental 
-        landmasses within Earth's land hemisphere.
-        </p>
-        <p style={{opacity: 0}}>
-         Most of Earth's land is somewhat humid and covered by 
-        vegetation, while large sheets of ice at Earth's polar deserts retain more water than Earth's 
-        groundwater, lakes, rivers and atmospheric water combined. Earth's crust consists of slowly moving 
-        tectonic plates, which interact to produce mountain ranges, volcanoes, and earthquakes. Earth has a 
-        liquid outer core that generates a magnetosphere capable of deflecting most of the destructive solar 
-        
-        winds and cosmic radiation.
-        </p>
+Earth has a rounded shape, 
+through hydrostatic equilibrium, with an average diameter of 12,742 kilometres (7,918 mi),
+ making it the fifth largest planetary sized and largest terrestrial object of the Solar System.
+ </p>
+ <p style={{opacity: 0}}>
+ To measure the local variation of Earth's topography, geodesy employs an idealized 
+ Earth producing a shape called a geoid. Such a geoid shape is gained if the ocean is idealized,
+  covering Earth completely and without any perturbations such as tides and winds. 
+  The result is a smooth but gravitational irregular geoid surface, providing a mean sea level (MSL) 
+ as a reference level for topographic measurements
+ </p>
     </div>
   )
 }
 
-export default IntroPage
+export default SizePage

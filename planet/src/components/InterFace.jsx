@@ -3,6 +3,7 @@ import sound from '../assets/effect.wav';
 import gsap from 'gsap'
 import { PlanetContext } from '../context/PlanetContext';
 import IntroPage from './IntroPage';
+import SizePage from './SizePage';
 
 const InterFace = () => {
     const [audio] = useState(new Audio(sound));
@@ -23,7 +24,8 @@ const InterFace = () => {
              setUranus, 
             setNeptune, 
              introText, 
-            setIntroText} = useContext(PlanetContext);
+            setIntroText, 
+             setSize, size} = useContext(PlanetContext);
 
 
     // Play sound
@@ -334,9 +336,19 @@ gsap.to('.line', {
 
 
 setIntroText(true);
+setSize(false);
+
 
 
 }
+
+const handleSize = () => {
+  // size
+  setSize(true);
+  setIntroText(false);
+}
+
+
 
 
 
@@ -350,6 +362,10 @@ setIntroText(true);
                  
                   <IntroPage />
               </div>}
+
+              {size && <div>
+                   <SizePage />
+                </div>}
 
           
         
@@ -369,7 +385,7 @@ setIntroText(true);
         <div
           onMouseEnter={() => setSecond(true)}
           onMouseLeave={() => setSecond(false)}
-         
+           onClick={handleSize}
         ></div>
         
 
