@@ -375,7 +375,55 @@ const handleSurface = () => {
 }
 
 
+// hide sections
+const hideSection = () => {
+  setIntroText(false);
+  setSize(false);
+  setOrbit(false);
+  setSurface(false);
 
+  setSelectedPlanet('Discover the planets');
+
+  gsap.set('.title', {
+    opacity: 0,
+    clipPath: "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)"
+  });
+
+  gsap.to('.title', {
+    opacity: 1,
+    clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0 100%)",
+    duration: 2,
+    ease: "power2.inOut",
+  });
+
+  gsap.to('.sections', {
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  gsap.to('.sections', {
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  // Show buttons again
+  gsap.fromTo('.buttons button', {
+    opacity: 0,
+    y: 20
+  }, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.1,
+    delay: 0.4,
+    pointerEvents: "all"
+  });
+}
 
 
 
@@ -385,7 +433,7 @@ const handleSurface = () => {
             <h2 className='title'>{selectedPlanet}</h2>
             <span className='line'></span>
 
-           {introText || size || orbit || surface ?   <span className='back'><MoveLeft /></span> : ''}
+           {introText || size || orbit || surface ?   <span className='back' onClick={hideSection}><MoveLeft /></span> : ''}
            
             {introText && <div>
                  
