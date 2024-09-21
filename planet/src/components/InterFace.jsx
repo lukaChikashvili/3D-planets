@@ -6,6 +6,7 @@ import IntroPage from './IntroPage';
 import SizePage from './SizePage';
 import OrbitPage from './OrbitPage';
 import SurfacePage from './SurfacePage';
+import { ArrowBigLeft, MoveLeft } from 'lucide-react'
 
 const InterFace = () => {
     const [audio] = useState(new Audio(sound));
@@ -384,6 +385,8 @@ const handleSurface = () => {
             <h2 className='title'>{selectedPlanet}</h2>
             <span className='line'></span>
 
+           {introText || size || orbit || surface ?   <span className='back'><MoveLeft /></span> : ''}
+           
             {introText && <div>
                  
                   <IntroPage />

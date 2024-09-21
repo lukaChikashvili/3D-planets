@@ -234,4 +234,17 @@
     left: -50px;
 }
 
+.back {
+    position: absolute;
+    left: 3rem;
+    top: 4rem;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.4s ease-in
+}
+
+.back:hover {
+    color: #FFBF00;
+}
+
 
