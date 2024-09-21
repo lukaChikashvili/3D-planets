@@ -163,19 +163,21 @@ useEffect(() => {
   }
    
 
-  gsap.to(earth.current.position, {
-    x: 2.5,
-    y: -1,
-    z: 2,
-    duration: 3
-   });
-
-   gsap.to(atmoRef.current.position, {
-    x: 2.5,
-    y: -1,
-    z: 2,
-    duration: 3
-   });
+  if(surface) {
+    gsap.to(earth.current.position, {
+      x: 2.5,
+      y: -1,
+      z: 2,
+      duration: 3
+     });
+  
+     gsap.to(atmoRef.current.position, {
+      x: 2.5,
+      y: -1,
+      z: 2,
+      duration: 3
+     });
+  }
 
   
 }, [introText, size, orbit, surface]);
