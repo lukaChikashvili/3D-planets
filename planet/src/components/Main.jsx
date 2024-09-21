@@ -14,7 +14,7 @@ import gsap from 'gsap'
 const Main = () => {
 
     // use context
-    const { mercury, venus, mars, jupiter, saturn, uranus, neptune, introText, size, orbit } = useContext(PlanetContext);
+    const { mercury, venus, mars, jupiter, saturn, uranus, neptune, introText, size, orbit , surface} = useContext(PlanetContext);
 
 
 
@@ -162,7 +162,24 @@ useEffect(() => {
      });
   }
    
-}, [introText, size, orbit]);
+
+  if(surface) {
+    gsap.to(earth.current.position, {
+      x: 2.5,
+      y: -1,
+      z: 2,
+      duration: 3
+     });
+  
+     gsap.to(atmoRef.current.position, {
+      x: 2.5,
+      y: -1,
+      z: 2,
+      duration: 3
+     });
+  }
+   
+}, [introText, size, orbit, surface]);
 
 
   return (
