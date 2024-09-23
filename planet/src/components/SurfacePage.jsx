@@ -85,7 +85,7 @@ Mercury's surface resembles that of Earth's Moon, scarred by many impact craters
   
   ` : saturn ? `
   
-  
+  As a gas giant, Saturn doesn’t have a true surface. The planet is mostly swirling gases and liquids deeper down. While a spacecraft would have nowhere to land on Saturn, it wouldn’t be able to fly through unscathed either. The extreme pressures and temperatures deep inside the planet would crush, melt, and vaporize any spacecraft trying to fly into the planet.
   ` : uranus ? `
   
 
@@ -111,7 +111,9 @@ Deeper down, Jupiter's central core had long been a mystery. Scientists theorize
 
 ` : saturn ? `
 
+Saturn is blanketed with clouds that appear as faint stripes, jet streams, and storms. The planet is many different shades of yellow, brown, and gray.
 
+Winds in the upper atmosphere reach 1,600 feet per second (500 meters per second) in the equatorial region. In contrast, the strongest hurricane-force winds on Earth top out at about 360 feet per second (110 meters per second). And the pressure – the same kind you feel when you dive deep underwater – is so powerful it squeezes gas into a liquid.
 ` : uranus ? `
 
 

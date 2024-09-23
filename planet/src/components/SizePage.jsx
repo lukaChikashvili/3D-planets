@@ -90,8 +90,10 @@ From an average distance of 36 million miles (58 million kilometers), Mercury is
 
    
    ` : saturn ? `
-   
-   
+   With an equatorial diameter of about 74,897 miles (120,500 kilometers), Saturn is 9 times wider than Earth. If Earth were the size of a nickel, Saturn would be about as big as a volleyball.
+
+From an average distance of 886 million miles (1.4 billion kilometers), Saturn is 9.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 80 minutes to travel from the Sun to Saturn.
+     
    ` : uranus ? `
    
 
@@ -118,7 +120,9 @@ through hydrostatic equilibrium, with an average diameter of 12,742 kilometres (
    With a radius of 43,440.7 miles (69,911 kilometers), Jupiter is 11 times wider than Earth. If Earth were the size of a grape, Jupiter would be about as big as a basketball.
    
    ` : saturn ? `
-   
+   Saturn's environment is not conducive to life as we know it. The temperatures, pressures, and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to.
+
+While planet Saturn is an unlikely place for living things to take hold, the same is not true of some of its many moons. Satellites like Enceladus and Titan, home to internal oceans, could possibly support life.
    
    ` : uranus ? `
    
