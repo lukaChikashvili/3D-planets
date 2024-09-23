@@ -139,21 +139,34 @@ useEffect(() => {
      });
   }
 
-  if(size) {
+  if(size && !mercury && !venus && !mars && !jupiter && !saturn && !uranus && !neptune) {
     gsap.to(earth.current.position, {
       x: 0,
       y: -2.5,
       z: 3.5,
       duration: 3
      });
-  
+
      gsap.to(atmoRef.current.position, {
       x: 0,
       y: -2.5,
       z: 3.5,
       duration: 3
      });
+  
+  
   }
+  
+  if (size && (mercury || venus || mars || jupiter || neptune || uranus || saturn)) {
+    gsap.to(earth.current.position, {
+      x: 0,
+      y: -2.5,
+      z: 3.5,
+      duration: 3
+    });
+  }
+
+
 
   if(orbit) {
     gsap.to(earth.current.position, {
