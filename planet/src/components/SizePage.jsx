@@ -85,7 +85,9 @@ From an average distance of 36 million miles (58 million kilometers), Mercury is
    With a radius of 2,106 miles (3,390 kilometers), Mars is about half the size of Earth. If Earth were the size of a nickel, Mars would be about as big as a raspberry.
      
    ` :  jupiter ? `
-   
+   From an average distance of 484 million miles (778 million kilometers), Jupiter is 5.2 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 43 minutes to travel from the Sun to Jupiter.
+
+
    
    ` : saturn ? `
    
@@ -113,7 +115,7 @@ through hydrostatic equilibrium, with an average diameter of 12,742 kilometres (
     From an average distance of 142 million miles (228 million kilometers), Mars is 1.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 13 minutes to travel from the Sun to Mars.
      
    ` :  jupiter ? `
-   
+   With a radius of 43,440.7 miles (69,911 kilometers), Jupiter is 11 times wider than Earth. If Earth were the size of a grape, Jupiter would be about as big as a basketball.
    
    ` : saturn ? `
    
