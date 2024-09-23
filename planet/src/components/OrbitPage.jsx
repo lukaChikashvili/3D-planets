@@ -78,7 +78,23 @@ Spending a day on Venus would be quite a disorienting experience –
 that is, if your spacecraft or spacesuit could protect you from temperatures in the range of 900 degrees Fahrenheit (475 Celsius). For one thing, your “day” would be 243 Earth days long – longer even than a Venus year (one trip around the Sun), which takes only 225 Earth days. For another, because of the planet's extremely slow rotation, sunrise to sunset would take 117 Earth days. And by the way, the Sun would rise in the west and set in the east,
  because Venus spins backward compared to Earth.
 
-` : `As Earth orbits the Sun, it completes one rotation every 23.9 hours. 
+` :  
+ mars ? `
+ As Mars orbits the Sun, it completes one rotation every 24.6 hours, which is very similar to one day on Earth (23.9 hours). Martian days are called sols – short for "solar day." A year on Mars lasts 669.6 sols, which is the same as 687 Earth days.
+     
+   ` :  jupiter ? `
+   
+   
+   ` : saturn ? `
+   
+   
+   ` : uranus ? `
+   
+
+   ` : neptune ? `
+   
+   ` :
+`As Earth orbits the Sun, it completes one rotation every 23.9 hours. 
 It takes 365.25 days to complete one trip around the Sun. That extra quarter of a day presents a challenge to our calendar system, which counts one year as 365 days. To keep our yearly calendars consistent with our orbit around the Sun, every four years we add one day. That day is called a leap day,
  and the year it's added to is called a leap year.`}
 </p>
@@ -92,7 +108,23 @@ While you’re waiting, don’t expect any seasonal relief from the unrelenting 
  part of the planet (our hemisphere) receives the Sun’s rays more directly – a result of that tilt.
   In winter, the tilt means the rays are less direct. 
 
-` : `Earth's axis of rotation is tilted 23.4 degrees with respect to the plane of Earth's orbit around the Sun. 
+`  : mars ? `
+   
+Mars' axis of rotation is tilted 25 degrees with respect to the plane of its orbit around the Sun. This is another similarity with Earth, which has an axial tilt of 23.4 degrees. Like Earth, Mars has distinct seasons, but they last longer than seasons here on Earth since Mars takes longer to orbit the Sun (because it's farther away). And while here on Earth the seasons are evenly spread over the year, lasting 3 months (or one quarter of a year), on Mars the seasons vary in length because of Mars' elliptical, egg-shaped orbit around the Sun.
+` :  jupiter ? `
+
+
+` : saturn ? `
+
+
+` : uranus ? `
+
+
+` : neptune ? `
+
+` :
+
+`Earth's axis of rotation is tilted 23.4 degrees with respect to the plane of Earth's orbit around the Sun. 
 This tilt causes our yearly cycle of seasons. During part of the year, the northern hemisphere is
  tilted toward the Sun, and the southern hemisphere is tilted away. With the Sun higher in the sky, solar heating is greater in the north producing summer there. Less direct solar heating produces winter in the south. Six months later, the situation is reversed. When spring and fall begin, 
 both hemispheres receive roughly equal amounts of heat from the Sun.`}

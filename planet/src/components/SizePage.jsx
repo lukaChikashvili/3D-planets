@@ -81,7 +81,21 @@ From an average distance of 36 million miles (58 million kilometers), Mercury is
    `  : venus ? `
    Venus orbits the Sun from an average distance of 67 million miles (108 million kilometers), or 0.72 astronomical units. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, 
    it takes sunlight about six minutes to travel from the Sun to Venus.
-   ` :      
+   ` : mars ? `
+   With a radius of 2,106 miles (3,390 kilometers), Mars is about half the size of Earth. If Earth were the size of a nickel, Mars would be about as big as a raspberry.
+     
+   ` :  jupiter ? `
+   
+   
+   ` : saturn ? `
+   
+   
+   ` : uranus ? `
+   
+
+   ` : neptune ? `
+   
+   ` :
 
 `Earth has a rounded shape, 
 through hydrostatic equilibrium, with an average diameter of 12,742 kilometres (7,918 mi),
@@ -95,7 +109,21 @@ through hydrostatic equilibrium, with an average diameter of 12,742 kilometres (
     Because Venus’ orbit is closer to the Sun than ours, the two of them – 
     from our viewpoint – never stray far from each other. The ancient Egyptians and Greeks saw Venus in two guises: first in one orbital position (seen in the morning), 
     then another (your “evening” Venus), just at different times of the year.
-    ` :
+    ` : mars ? `
+    From an average distance of 142 million miles (228 million kilometers), Mars is 1.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 13 minutes to travel from the Sun to Mars.
+     
+   ` :  jupiter ? `
+   
+   
+   ` : saturn ? `
+   
+   
+   ` : uranus ? `
+   
+   
+   ` : neptune ? `
+   
+   ` :
     
     `
     To measure the local variation of Earth's topography, geodesy employs an idealized 

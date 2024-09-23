@@ -77,6 +77,20 @@ Mercury's surface resembles that of Earth's Moon, scarred by many impact craters
   If we could slice Venus and Earth in half, pole to pole, and place them side by side,
    they would look remarkably similar. Each planet has an iron core enveloped by a hot-rock mantle; the thinnest of skins forms a rocky, exterior crust. On both planets, this thin skin changes form and sometimes erupts into volcanoes in response to the ebb and
    flow of heat and pressure deep beneath.
+  `  : mars ? `
+  Interestingly, while Mars is about half the diameter of Earth, its surface has nearly the same area as Earth’s dry land. Its volcanoes, impact craters, crustal movement, and atmospheric conditions such as dust storms have altered the landscape of Mars over many years, creating some of the solar system's most interesting topographical features.
+     
+  ` :  jupiter ? `
+  
+  
+  ` : saturn ? `
+  
+  
+  ` : uranus ? `
+  
+
+  ` : neptune ? `
+  
   ` :
 `Like Mars and Venus, Earth has volcanoes, mountains, and valleys.
  Earth's lithosphere, which includes the crust (both continental and oceanic) and the upper mantle, 
@@ -88,6 +102,20 @@ Mercury's surface resembles that of Earth's Moon, scarred by many impact craters
 Very large impact basins, including Caloris (960 miles or 1,550 kilometers in diameter) and Rachmaninoff (190 miles, or 306 kilometers in diameter), were created by asteroid impacts on the planet's surface early in the solar system's history. While there are large areas of smooth terrain, there are also cliffs, some hundreds of miles long and soaring up to a mile high. They rose as the planet's interior cooled and contracted over the billions of years since Mercury formed.
 `  :  venus ? `
 On Earth, the slow movement of continents over thousands and millions of years reshapes the surface, a process known as “plate tectonics.” Something similar might have happened on Venus early in its history. Today a key element of this process could be operating: subduction, or the sliding of one continental “plate” beneath another, which can also trigger volcanoes. Subduction is believed to be the first step in creating plate tectonics.
+
+`  : mars ? `
+The Red Planet is actually many colors. At the surface, we see colors such as brown, gold, and tan. The reason Mars looks reddish is due to oxidization – or rusting – of iron in the rocks, regolith (Martian “soil”), and dust of Mars. This dust gets kicked up into the atmosphere and from a distance makes the planet appear mostly red.
+     
+` :  jupiter ? `
+
+
+` : saturn ? `
+
+
+` : uranus ? `
+
+
+` : neptune ? `
 
 ` : `Earth's global ocean, which covers nearly 70% of the planet's surface, 
 has an average depth of about 2.5 miles (4 kilometers) and contains 97% of Earth's water.
