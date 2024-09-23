@@ -17,8 +17,7 @@ const Main = () => {
     const { mercury, venus, mars, jupiter, saturn, uranus, neptune, introText, size, orbit , surface, init, setInit} = useContext(PlanetContext);
 
 
-    // orbit control ref
-    let controlRef = useRef();
+  
 
 
 
@@ -98,35 +97,7 @@ const AtmosphereUniforms = useRef({
 let earth = useRef();
 
 
-const [isDragging, setIsDragging] = useState(false);
-const [lastMousePosition, setLastMousePosition] = useState({ x: 0, y: 0 }); 
-const [rotation, setRotation] = useState({ x: 0, y: 0 });
 
-// mouse down function
-const handlePointerDown = (event) => {
-  setIsDragging(true);
-  setLastMousePosition({ x: event.clientX, y: event.clientY });
-
-}
-
-const handlePointerUp = () => {
-  setIsDragging(false); 
-};
-
-const handlePointerMove = (event) => {
-  if (!isDragging) return;
-
-  const deltaX = event.clientX - lastMousePosition.x;
-  const deltaY = event.clientY - lastMousePosition.y;
-
-  setLastMousePosition({ x: event.clientX, y: event.clientY });
-
-  setRotation((prevRotation) => ({
-    x: prevRotation.x + deltaY * 0.005,
-    y: prevRotation.y + deltaX * 0.005, 
-  }))
-
-}
 
 
 
@@ -134,10 +105,10 @@ const handlePointerMove = (event) => {
 // change planet smoothly
 
 useEffect(() => {
-    if (earth.current) {
-        gsap.set(earth.current.material, { opacity: 0 });
-        gsap.to(earth.current.material, { opacity: 1, duration: 2, delay: 2 }); 
-    }
+  if (earth.current) {
+      gsap.set(earth.current.material, { opacity: 0 });
+      gsap.to(earth.current.material, { opacity: 1, duration: 2, delay: 2 }); 
+  }
 }, [mercury, venus, mars, jupiter, saturn, uranus, neptune]);
 
 // atmosphere ref
@@ -146,16 +117,7 @@ let atmoRef = useRef();
 
 
 useFrame(() => {
-  if (earth.current) {
-    if(!isDragging) {
-      earth.current.rotation.y += 0.0004;
-    }else {
-
-      earth.current.rotation.y = rotation.y; 
-      earth.current.rotation.x = rotation.x;
-    }
- 
-  }
+  earth.current.rotation.y += 0.0004;
 });
 
 
@@ -286,71 +248,63 @@ useEffect(() => {
 }, [introText, size, orbit, surface]);
 
 
+
   return (
      <>
      
-      
+      <OrbitControls makeDefault />
 
-      
+    
 
        {
   mercury ? (
     <mesh ref={earth} scale={1.3}  
-    onPointerDown={handlePointerDown} 
-     onPointerMove={handlePointerMove}
-     onPointerUp={handlePointerUp}
+    
      >
       <sphereGeometry args={[2, 64, 64]}  />
       <meshBasicMaterial map={mercuryTexture} />
        
     </mesh>
   ) : venus ? (
-    <mesh ref={earth} scale={1.3}  onPointerDown={handlePointerDown} 
-    onPointerMove={handlePointerMove}
-    onPointerUp={handlePointerUp}>
+    <mesh ref={earth} scale={1.3} 
+    >
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={venusTexture} />
     </mesh>
   ) : mars ? (
-    <mesh ref={earth} scale={1.3}  onPointerDown={handlePointerDown} 
-    onPointerMove={handlePointerMove}
-    onPointerUp={handlePointerUp}>
+    <mesh ref={earth} scale={1.3} 
+    >
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={marsTexture} />
     </mesh>
   ) : jupiter ? (
-    <mesh ref={earth} scale={1.3}  onPointerDown={handlePointerDown} 
-    onPointerMove={handlePointerMove}
-    onPointerUp={handlePointerUp}>
+    <mesh ref={earth} scale={1.3}  
+  >
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={jupiterTexture} />
     </mesh>
   ) : saturn ? (
-    <mesh ref={earth} scale={1.3}  onPointerDown={handlePointerDown} 
-    onPointerMove={handlePointerMove}
-    onPointerUp={handlePointerUp}>
+    <mesh ref={earth} scale={1.3} 
+   >
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={saturnTexture} />
     </mesh>
   )  : uranus ? (
-    <mesh ref={earth} scale={1.3}  onPointerDown={handlePointerDown} 
-    onPointerMove={handlePointerMove}
-    onPointerUp={handlePointerUp}>
+    <mesh ref={earth} scale={1.3}  
+   >
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={uranTexture} />
     </mesh>
   ) : neptune ? (
-    <mesh ref={earth} scale={1.3}  onPointerDown={handlePointerDown} 
-    onPointerMove={handlePointerMove}
-    onPointerUp={handlePointerUp}>
+    <mesh ref={earth} scale={1.3}  
+   >
       <sphereGeometry args={[2, 64, 64]} />
       <meshBasicMaterial map={neptuneTexture} />
     </mesh>
   )  : (
     <>
-      <mesh ref={earth} scale={1.3}  onPointerDown={handlePointerDown} 
-     onPointerMove={handlePointerMove}
-     onPointerUp={handlePointerUp}>
+      <mesh ref={earth} scale={1.3}  
+      >
         <sphereGeometry args={[2, 64, 64]} />
         <shaderMaterial
           vertexShader={vertex}
