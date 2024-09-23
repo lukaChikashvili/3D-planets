@@ -156,7 +156,7 @@ useEffect(() => {
   
   
   }
-  
+
   if (size && (mercury || venus || mars || jupiter || neptune || uranus || saturn)) {
     gsap.to(earth.current.position, {
       x: 0,
@@ -168,7 +168,7 @@ useEffect(() => {
 
 
 
-  if(orbit) {
+  if(orbit && !mercury && !venus && !mars && !jupiter && !saturn && !uranus && !neptune) {
     gsap.to(earth.current.position, {
       x: -2.5,
       y: -1,
@@ -183,9 +183,21 @@ useEffect(() => {
     duration: 3
      });
   }
+
+
+  if (orbit && (mercury || venus || mars || jupiter || neptune || uranus || saturn)) {
+    gsap.to(earth.current.position, {
+      x: -2.5,
+      y: -1,
+      z: 2,
+      duration: 3
+     });
+  }
+
+
    
 
-  if(surface) {
+  if(surface  && !mercury && !venus && !mars && !jupiter && !saturn && !uranus && !neptune) {
     gsap.to(earth.current.position, {
       x: 2.5,
       y: -1,
@@ -194,6 +206,15 @@ useEffect(() => {
      });
   
      gsap.to(atmoRef.current.position, {
+      x: 2.5,
+      y: -1,
+      z: 2,
+      duration: 3
+     });
+  }
+
+  if (surface && (mercury || venus || mars || jupiter || neptune || uranus || saturn)) {
+    gsap.to(earth.current.position, {
       x: 2.5,
       y: -1,
       z: 2,
