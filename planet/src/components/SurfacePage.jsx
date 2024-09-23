@@ -5,7 +5,7 @@ import { PlanetContext } from '../context/PlanetContext';
 
 const SurfacePage = () => {
 
-  const { surface,  } = useContext(PlanetContext);
+  const { surface, mercury, venus, mars, jupiter, saturn, uranus, neptune  } = useContext(PlanetContext);
 
    
   // animate intro page
@@ -69,16 +69,21 @@ const SurfacePage = () => {
 
 <p style={{opacity: 0}}>
 
-Like Mars and Venus, Earth has volcanoes, mountains, and valleys.
+{ mercury ? 
+`
+Mercury's surface resembles that of Earth's Moon, scarred by many impact craters resulting from collisions with meteoroids and comets. Craters and features on Mercury are named after famous deceased artists, musicians, or authors, including children's author Dr. Seuss and dance pioneer Alvin Ailey.
+` : `Like Mars and Venus, Earth has volcanoes, mountains, and valleys.
  Earth's lithosphere, which includes the crust (both continental and oceanic) and the upper mantle, 
  is divided into huge plates that are constantly moving. For example, the North American plate moves west over the Pacific Ocean basin, roughly at a rate equal to the growth of our fingernails. Earthquakes result when plates grind past one another, ride up over one another,
- collide to make mountains, or split and separate.
+ collide to make mountains, or split and separate.`}
 </p>
 <p style={{opacity: 0}}>
-Earth's global ocean, which covers nearly 70% of the planet's surface, 
+{ mercury ? `
+Very large impact basins, including Caloris (960 miles or 1,550 kilometers in diameter) and Rachmaninoff (190 miles, or 306 kilometers in diameter), were created by asteroid impacts on the planet's surface early in the solar system's history. While there are large areas of smooth terrain, there are also cliffs, some hundreds of miles long and soaring up to a mile high. They rose as the planet's interior cooled and contracted over the billions of years since Mercury formed.
+` :`Earth's global ocean, which covers nearly 70% of the planet's surface, 
 has an average depth of about 2.5 miles (4 kilometers) and contains 97% of Earth's water.
  Almost all of Earth's volcanoes are hidden under these oceans. Hawaii's Mauna Kea volcano is taller from base to summit than Mount Everest, but most of it is underwater. Earth's longest mountain range is also underwater, at the bottom of the Arctic and Atlantic oceans. It is four times longer than the Andes,
- Rockies and Himalayas combined.
+ Rockies and Himalayas combined.`}
 </p>
   </div>
   )
