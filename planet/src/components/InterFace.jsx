@@ -29,7 +29,7 @@ const InterFace = () => {
              introText, 
             setIntroText, 
              setSize, size, 
-            orbit, setOrbit, surface ,setSurface} = useContext(PlanetContext);
+            orbit, setOrbit, surface ,setSurface, setInit} = useContext(PlanetContext);
 
 
     // Play sound
@@ -382,6 +382,8 @@ const hideSection = () => {
   setOrbit(false);
   setSurface(false);
 
+  setShowMenu(false);
+
   setSelectedPlanet('Discover the planets');
 
   gsap.set('.title', {
@@ -423,6 +425,9 @@ const hideSection = () => {
     delay: 0.4,
     pointerEvents: "all"
   });
+
+  setInit(true);
+
 }
 
 

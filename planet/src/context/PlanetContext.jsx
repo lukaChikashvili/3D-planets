@@ -35,13 +35,14 @@ const [orbit, setOrbit] = useState(false);
 // surface text
 const [surface, setSurface] = useState(false);
 
-
+// initial position
+const [init, setInit] = useState(false);
 
     return (
      <PlanetContext.Provider value={{ mercury,
       setMercury, venus, setVenus , mars, 
       setMars, jupiter, setJupiter, saturn, setSaturn, uranus, setUranus, 
-      neptune, setNeptune, introText, setIntroText, size, setSize, orbit, setOrbit, surface, setSurface}} >
+      neptune, setNeptune, introText, setIntroText, size, setSize, orbit, setOrbit, surface, setSurface, init, setInit}} >
          { children }
      </PlanetContext.Provider>
     )
