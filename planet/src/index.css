@@ -102,11 +102,11 @@
 
 .buttons {
     position: absolute;
-    top: 4rem;
-    right: 6rem;
+    top: 6rem;
+    right: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.3rem;
     pointer-events: auto;
 
 }

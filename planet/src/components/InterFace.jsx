@@ -428,7 +428,7 @@ const handleSurface = () => {
     
   });
 
-  
+
   setSize(false);
   setIntroText(false);
   setOrbit(false);
@@ -569,7 +569,7 @@ const hideSection = () => {
         </div>
 
             <div className='buttons'>
-            {['EARTH', 'MERCURY', 'VENUS', 'MARS', 'JUPITER', 'SATURN', 'URANUS', 'NEPTUNE', 'PLUTO'].map((planet) => (
+            {['EARTH', 'MERCURY', 'VENUS', 'MARS', 'JUPITER', 'SATURN', 'URANUS', 'NEPTUNE'].map((planet) => (
                     <button
                         key={planet}
                         onClick={() => handleClick(planet)}
