@@ -98,7 +98,7 @@ From an average distance of 886 million miles (1.4 billion kilometers), Saturn i
    With an equatorial diameter of 31,763 miles (51,118 kilometers), Uranus is four times wider than Earth. If Earth was the size of a nickel, Uranus would be about as big as a softball.
 
    ` : neptune ? `
-   
+   With an equatorial diameter of 30,775 miles (49,528 kilometers), Neptune is about four times wider than Earth. If Earth were the size of a nickel, Neptune would be about as big as a baseball.
    ` :
 
 `Earth has a rounded shape, 
@@ -128,7 +128,9 @@ While planet Saturn is an unlikely place for living things to take hold, the sam
    From an average distance of 1.8 billion miles (2.9 billion kilometers), Uranus is about 19 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 2 hours and 40 minutes to travel from the Sun to Uranus.
    
    ` : neptune ? `
-   
+   From an average distance of 2.8 billion miles (4.5 billion kilometers), Neptune is 30 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 4 hours to travel from the Sun to Neptune.
+
+
    ` :
     
     `

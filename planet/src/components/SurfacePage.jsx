@@ -92,7 +92,7 @@ Mercury's surface resembles that of Earth's Moon, scarred by many impact craters
 
 
   ` : neptune ? `
-  
+  Neptune does not have a solid surface. Its atmosphere (made up mostly of hydrogen, helium, and methane) extends to great depths, gradually merging into water and other melted ices over a heavier, solid core with about the same mass as Earth.
   ` :
 `Like Mars and Venus, Earth has volcanoes, mountains, and valleys.
  Earth's lithosphere, which includes the crust (both continental and oceanic) and the upper mantle, 
@@ -124,7 +124,7 @@ Uranus has auroras, but they are not in line with the poles like they are on Ear
 
 The magnetosphere tail behind Uranus opposite the Sun extends into space for millions of miles. Its magnetic field lines are twisted by Uranus’ sideways rotation into a long corkscrew shape.
 ` : neptune ? `
-
+The main axis of Neptune's magnetic field is tipped over by about 47 degrees compared with the planet's rotation axis. Like Uranus, whose magnetic axis is tilted about 60 degrees from the axis of rotation, Neptune's magnetosphere undergoes wild variations during each rotation because of this misalignment. The magnetic field of Neptune is about 27 times more powerful than that of Earth.
 ` : `Earth's global ocean, which covers nearly 70% of the planet's surface, 
 has an average depth of about 2.5 miles (4 kilometers) and contains 97% of Earth's water.
  Almost all of Earth's volcanoes are hidden under these oceans. Hawaii's Mauna Kea volcano is taller from base to summit than Mount Everest, but most of it is underwater. Earth's longest mountain range is also underwater, at the bottom of the Arctic and Atlantic oceans. It is four times longer than the Andes,

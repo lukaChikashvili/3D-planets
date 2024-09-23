@@ -94,7 +94,7 @@ Its axis is tilted by 26.73 degrees with respect to its orbit around the Sun, wh
    One day on Uranus takes about 17 hours. This is the amount of time it takes Uranus to rotate, or spin once around its axis. Uranus makes a complete orbit around the Sun (a year in Uranian time) in about 84 Earth years (30,687 Earth days).
 
    ` : neptune ? `
-   
+   One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). And Neptune makes a complete orbit around the Sun (a year in Neptunian time) in about 165 Earth years (60,190 Earth days).
    ` :
 `As Earth orbits the Sun, it completes one rotation every 23.9 hours. 
 It takes 365.25 days to complete one trip around the Sun. That extra quarter of a day presents a challenge to our calendar system, which counts one year as 365 days. To keep our yearly calendars consistent with our orbit around the Sun, every four years we add one day. That day is called a leap day,
@@ -125,7 +125,9 @@ Uranus is the only planet whose equator is nearly at a right angle to its orbit,
 Uranus is also one of just two planets that rotate in the opposite direction than most of the planets. Venus is the other.
 
 ` : neptune ? `
+Sometimes Neptune is even farther from the Sun than dwarf planet Pluto. Pluto's highly eccentric, oval-shaped orbit brings it inside Neptune's orbit for a 20-year period every 248 Earth years. This switch, in which Pluto is closer to the Sun than Neptune, happened most recently from 1979 to 1999. Pluto can never crash into Neptune, though, because for every three laps Neptune takes around the Sun, Pluto makes two. This repeating pattern prevents close approaches of the two bodies.
 
+Neptune’s axis of rotation is tilted 28 degrees with respect to the plane of its orbit around the Sun, which is similar to the axial tilts of Mars and Earth. This means that Neptune experiences seasons just like we do on Earth; however, since its year is so long, each of the four seasons lasts for over 40 years.
 ` :
 
 `Earth's axis of rotation is tilted 23.4 degrees with respect to the plane of Earth's orbit around the Sun. 
