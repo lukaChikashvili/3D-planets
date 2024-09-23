@@ -112,7 +112,7 @@ let atmoRef = useRef();
 
 // animate earth position
 useEffect(() => {
-  if(introText && !mercury) {
+  if(introText && !mercury && !venus && !mars && !jupiter && !saturn && !uranus && !neptune) {
    gsap.to(earth.current.position, {
     x: 2.5,
     y: -1,
@@ -130,7 +130,7 @@ useEffect(() => {
   
   }
 
-  if(mercury) {
+  if(mercury || venus || mars || jupiter || neptune || uranus || saturn) {
     gsap.to(earth.current.position, {
       x: 2.5,
       y: -1,
