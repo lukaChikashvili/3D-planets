@@ -349,6 +349,27 @@ setSurface(false);
 // handle size
 
 const handleSize = () => {
+
+     // hide title
+
+     gsap.to('.title', {
+      opacity: 0,
+      clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0 100%)",
+      duration: 0.5,
+      ease: "power2.inOut",
+      
+  });
+  
+  // hide line
+  gsap.to('.line', {
+    opacity: 0,
+    width: "0px",
+    duration: 2,
+    ease: "power2.inOut",
+    
+  });
+
+
   // size
   setSize(true);
   setIntroText(false);
@@ -359,6 +380,25 @@ const handleSize = () => {
 
 // handle orbit
 const handleOrbit = () => {
+
+     // hide title
+
+     gsap.to('.title', {
+      opacity: 0,
+      clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0 100%)",
+      duration: 0.5,
+      ease: "power2.inOut",
+      
+  });
+  
+  // hide line
+  gsap.to('.line', {
+    opacity: 0,
+    width: "0px",
+    duration: 2,
+    ease: "power2.inOut",
+    
+  });
   
   setSize(false);
   setIntroText(false);
@@ -368,6 +408,27 @@ const handleOrbit = () => {
 
 // handle surface
 const handleSurface = () => {
+
+     // hide title
+
+     gsap.to('.title', {
+      opacity: 0,
+      clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0 100%)",
+      duration: 0.5,
+      ease: "power2.inOut",
+      
+  });
+  
+  // hide line
+  gsap.to('.line', {
+    opacity: 0,
+    width: "0px",
+    duration: 2,
+    ease: "power2.inOut",
+    
+  });
+
+  
   setSize(false);
   setIntroText(false);
   setOrbit(false);
