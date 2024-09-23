@@ -112,7 +112,7 @@ let atmoRef = useRef();
 
 // animate earth position
 useEffect(() => {
-  if(introText) {
+  if(introText && !mercury) {
    gsap.to(earth.current.position, {
     x: 2.5,
     y: -1,
@@ -127,7 +127,16 @@ useEffect(() => {
     duration: 3
    });
 
+  
+  }
 
+  if(mercury) {
+    gsap.to(earth.current.position, {
+      x: 2.5,
+      y: -1,
+      z: 2,
+      duration: 3
+     });
   }
 
   if(size) {
