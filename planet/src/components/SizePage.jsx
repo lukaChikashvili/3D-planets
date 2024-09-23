@@ -95,7 +95,7 @@ From an average distance of 36 million miles (58 million kilometers), Mercury is
 From an average distance of 886 million miles (1.4 billion kilometers), Saturn is 9.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 80 minutes to travel from the Sun to Saturn.
      
    ` : uranus ? `
-   
+   With an equatorial diameter of 31,763 miles (51,118 kilometers), Uranus is four times wider than Earth. If Earth was the size of a nickel, Uranus would be about as big as a softball.
 
    ` : neptune ? `
    
@@ -125,7 +125,7 @@ through hydrostatic equilibrium, with an average diameter of 12,742 kilometres (
 While planet Saturn is an unlikely place for living things to take hold, the same is not true of some of its many moons. Satellites like Enceladus and Titan, home to internal oceans, could possibly support life.
    
    ` : uranus ? `
-   
+   From an average distance of 1.8 billion miles (2.9 billion kilometers), Uranus is about 19 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 2 hours and 40 minutes to travel from the Sun to Uranus.
    
    ` : neptune ? `
    

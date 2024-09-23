@@ -91,7 +91,7 @@ that is, if your spacecraft or spacesuit could protect you from temperatures in 
 Its axis is tilted by 26.73 degrees with respect to its orbit around the Sun, which is similar to Earth's 23.5-degree tilt. This means that, like Earth, Saturn experiences seasons.
    
    ` : uranus ? `
-   
+   One day on Uranus takes about 17 hours. This is the amount of time it takes Uranus to rotate, or spin once around its axis. Uranus makes a complete orbit around the Sun (a year in Uranian time) in about 84 Earth years (30,687 Earth days).
 
    ` : neptune ? `
    
@@ -120,7 +120,9 @@ Its equator is tilted with respect to its orbital path around the Sun by just 3 
 Saturn took shape when the rest of the solar system formed about 4.5 billion years ago when gravity pulled swirling gas and dust in to become this gas giant. About 4 billion years ago, Saturn settled into its current position in the outer solar system, where it is the sixth planet from the Sun. Like Jupiter, Saturn is mostly made of hydrogen and helium, the same two main components that make up the Sun.
 
 ` : uranus ? `
+Uranus is the only planet whose equator is nearly at a right angle to its orbit, with a tilt of 97.77 degrees. This may be the result of a collision with an Earth-sized object long ago. This unique tilt causes Uranus to have the most extreme seasons in the solar system. For nearly a quarter of each Uranian year, the Sun shines directly over each pole, plunging the other half of the planet into a 21-year-long, dark winter.
 
+Uranus is also one of just two planets that rotate in the opposite direction than most of the planets. Venus is the other.
 
 ` : neptune ? `
 

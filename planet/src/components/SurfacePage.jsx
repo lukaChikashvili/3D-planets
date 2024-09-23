@@ -87,7 +87,9 @@ Mercury's surface resembles that of Earth's Moon, scarred by many impact craters
   
   As a gas giant, Saturn doesn’t have a true surface. The planet is mostly swirling gases and liquids deeper down. While a spacecraft would have nowhere to land on Saturn, it wouldn’t be able to fly through unscathed either. The extreme pressures and temperatures deep inside the planet would crush, melt, and vaporize any spacecraft trying to fly into the planet.
   ` : uranus ? `
-  
+  As an ice giant, Uranus doesn’t have a true surface. The planet is mostly swirling fluids. While a spacecraft would have nowhere to land on Uranus, it wouldn’t be able to fly through its atmosphere unscathed either. The extreme pressures and temperatures would destroy a metal spacecraft.
+
+
 
   ` : neptune ? `
   
@@ -116,7 +118,11 @@ Saturn is blanketed with clouds that appear as faint stripes, jet streams, and s
 Winds in the upper atmosphere reach 1,600 feet per second (500 meters per second) in the equatorial region. In contrast, the strongest hurricane-force winds on Earth top out at about 360 feet per second (110 meters per second). And the pressure – the same kind you feel when you dive deep underwater – is so powerful it squeezes gas into a liquid.
 ` : uranus ? `
 
+Uranus has an unusual, irregularly shaped magnetosphere. Magnetic fields are typically in alignment with a planet's rotation, but Uranus' magnetic field is tipped over: the magnetic axis is tilted nearly 60 degrees from the planet's axis of rotation, and is also offset from the center of the planet by one-third of the planet's radius.
 
+Uranus has auroras, but they are not in line with the poles like they are on Earth, Jupiter, and Saturn. This is due to the planet's lopsided magnetic field.
+
+The magnetosphere tail behind Uranus opposite the Sun extends into space for millions of miles. Its magnetic field lines are twisted by Uranus’ sideways rotation into a long corkscrew shape.
 ` : neptune ? `
 
 ` : `Earth's global ocean, which covers nearly 70% of the planet's surface, 
