@@ -8,6 +8,7 @@
 - React-three/drei
 - CSS
 - GLSL (OpenGL Shading Language)
+- GSAP
 
 *description*
 
