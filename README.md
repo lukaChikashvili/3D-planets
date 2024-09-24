@@ -3,6 +3,12 @@
 ## 3D planet website
 --------------------------------------------------
 
+# I used:
+- React / React-three/fiber
+- React-three/drei
+- CSS
+- GLSL (OpenGL Shading Language)
+
 *description*
 
 discover planets, interact with realistic earth, read about interesting informations about them.
