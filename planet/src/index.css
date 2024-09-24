@@ -101,9 +101,8 @@
 
 
 .buttons {
-    position: absolute;
-    top: 6rem;
-    right: 4rem;
+    margin-top: 5rem;
+    margin-right: 40px;
     display: flex;
     flex-direction: column;
     gap: 2.3rem;
@@ -247,4 +246,31 @@
     color: #FFBF00;
 }
 
+/* mobile */
 
+@media (max-width: 768px) {
+   .title {
+    display: none;
+   }
+
+   .line {
+    display: none;
+   }
+
+  .interface_buttons {
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+    margin-left: -30px;
+    padding: 30px;
+  }
+  }
+
+  @media only screen and (max-width: 500px) and (min-width: 420px) {
+    .interface_buttons {
+        margin-top: -40px;
+        margin-left: -40px;
+      }
+  }
